@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Staff Documents</title>
+<h2>Uploaded Documents</h2>
+<ul>
+  {% for file in files %}
+    <li>{{ file }}</li>
+  {% endfor %}
+</ul>
+<a href="{{ url_for('upload_file') }}">Upload New Document</a>
